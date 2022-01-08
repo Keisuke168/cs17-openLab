@@ -16,5 +16,12 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'event',
+        path: `${__dirname}/src/images/event/`,
+      },
+    },
   ],
 };

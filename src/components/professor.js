@@ -15,6 +15,7 @@ const Img = styled.img`
 
 const Div = styled.div`
     background: #eee;
+    padding: 10px;
     width: 45%;
     height: 40%;
     position: absolute;
@@ -32,9 +33,10 @@ const Professor = ({offset, factor=1}) => {
             </ParallaxLayer>
             <ParallaxLayer speed={-0.1} offset={offset} factor={factor}> 
                 <Div>
-                    <h1>
-                        Comment
-                    </h1>
+                    <h1>Message</h1>
+                    <p>3年生4Qで，ディジタル信号処理の授業を担当している滝口です．
+我々の研究室では，音声，対話，コンピュータビジョン，脳に関する研究をしています．この分野は，大学のみならず世界のIT企業Google，IBM，Apple，Microsoft，Amazon，Facebookなどが力を入れて研究開発を進めています．
+私たちは，特に医学，保健学，生物学など様々な異分野の融合による新しい研究を目指しています．</p>
                 </Div>
             </ParallaxLayer>
         </div>

@@ -14,6 +14,7 @@ const Layout = ({ children, className = `` }) => (
             boxSizing: `inherit`,
           },
           margin: `0px`,
+          fontFamily: `sans-serif`,
         },
         html: {
           fontSize: `18px`,
@@ -23,7 +24,7 @@ const Layout = ({ children, className = `` }) => (
           borderStyle: `none`,
         },
         pre: {
-          fontFamily: `monospace`,
+          fontFamily: `sans-serif`,
           fontSize: `1em`,
         },
         "[hidden]": {
