@@ -28,7 +28,7 @@ const Div = styled.div`
 const Professor = ({offset, factor=1}) => {
     return(
         <div>
-            <ParallaxLayer speed={0.3} offset={offset} factor={factor}>      
+            <ParallaxLayer speed={0.1} offset={offset} factor={factor}>      
                 <Img alt="sense" src={Image} />     
             </ParallaxLayer>
             <ParallaxLayer speed={-0.1} offset={offset} factor={factor}> 

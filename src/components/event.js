@@ -36,7 +36,7 @@ const bg = css`
 const Event = ({offset, factor=1}) => {
     return (
             <React.Fragment>
-            <ParallaxLayer speed={0.3} offset={offset} factor={factor}>
+            <ParallaxLayer speed={0.1} offset={offset} factor={factor}>
                 <EnjoyEvent>
                     <h1>Enjoy Event!!</h1>
                     <h2>研究生活は研究も大事だけど、イベントも大事！</h2>
