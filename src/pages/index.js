@@ -11,8 +11,8 @@ const IndexPage = () => {
     <Layout>
       <Parallax pages={10}>
         <Hero offset={0}/>
-        <Professor offset={1.5} />
-        <Event offset={3} />
+        <Professor offset={1} />
+        <Event offset={2} />
       </Parallax>
     </Layout>
   )

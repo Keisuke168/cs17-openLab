@@ -4,12 +4,19 @@ import { ParallaxLayer } from "@react-spring/parallax"
 import Sample from '../assets/people.mp4'
 
 const Video = styled.video`
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     width: 100%; 
     height: 100%;
     z-index: -999;
+    @media (max-width: 420px){
+        height: 60%;
+        width: auto;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%, -50%);
+    }
 `
 
 const H1 = styled.h1`

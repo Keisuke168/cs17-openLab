@@ -18,7 +18,7 @@ const Layout = ({ children, className = `` }) => (
         },
         html: {
           fontSize: `18px`,
-          WebkitTextSizeAdjust: `100%`,
+          WebkitTextSizeAdjust: `auto`,
         },
         img: {
           borderStyle: `none`,

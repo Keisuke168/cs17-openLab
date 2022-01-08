@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import { css } from '@emotion/react'
 import { ParallaxLayer } from "@react-spring/parallax"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import { StaticImage } from 'gatsby-plugin-image';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -25,6 +25,9 @@ const EnjoyEvent = styled.div`
 
 const slide = css`
     width: 60%;
+    @media (max-width: 420px){
+        width: 90%;
+    }
     margin: 10px auto;
 `
 
@@ -42,7 +45,7 @@ const Event = ({offset, factor=1}) => {
                     <h2>研究生活は研究も大事だけど、イベントも大事！</h2>
                     <Swiper
                         // install Swiper modules
-                        modules={[Navigation, Pagination, Scrollbar, A11y]}
+                        modules={[Navigation, Pagination, A11y]}
                         loop={true}
                         autoplay={{
                             delay: 2000,
@@ -53,7 +56,6 @@ const Event = ({offset, factor=1}) => {
                         effect='cards'
                         navigation
                         pagination={{ clickable: true }}
-                        scrollbar={{ draggable: true }}
                         grabCursor={true}
                         css={slide}
                         >

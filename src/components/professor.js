@@ -1,16 +1,23 @@
 import styled from "@emotion/styled"
 import * as React from 'react'
 import { ParallaxLayer } from "@react-spring/parallax"
-import Image from "../images/takigutisense.webp"
+import Image from "../images/takigutisense.jpg"
 
 
 const Img = styled.img`
-    width: 55%;
+    height: 90%;
     position: absolute;
     top: 50%;
     right: 0;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    @media (max-width: 420px){
+        width: 85%;
+        height: auto;
+        top: 25%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
 `
 
 const Div = styled.div`
