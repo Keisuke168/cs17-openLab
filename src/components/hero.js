@@ -11,7 +11,7 @@ const Video = styled.video`
     height: 100%;
     z-index: -999;
     @media (max-width: 420px){
-        height: 60%;
+        height: 80%;
         width: auto;
         top: 50%;
         -webkit-transform: translateY(-50%);
@@ -22,10 +22,15 @@ const Video = styled.video`
 const H1 = styled.h1`
     color: white;
     position: absolute;
+    font-size: 50px;
+    text-align: center;
+    @media(max-width: 420px){
+        font-size: 30px;
+    }
     top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 `
 
 const Hero = ({offset, factor = 1 }) => {
@@ -37,7 +42,7 @@ const Hero = ({offset, factor = 1 }) => {
                 </Video>
             </ParallaxLayer>
             <ParallaxLayer speed={0} offset={offset} factor={factor}>
-                <H1>CS17 滝口研究室</H1>
+                <H1>CS17<br/>TAKIGUCHI LAB</H1>
             </ParallaxLayer>
         </div>
     )

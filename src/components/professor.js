@@ -34,7 +34,25 @@ const Div = styled.div`
         width: 85%;
         height: auto;
         left: 1%;
-        top: 75%;
+        top: 60%;
+    }
+`
+
+const H1 = styled.h1`
+    color: #666;
+    font-size: 20px;
+    margin: 20px;
+    @media(max-width: 420px){
+        font-size: 15px;
+        margin: 15px;
+    }
+`
+
+const Message = styled.p`
+    color: #707070;
+    font-size: 20px;
+    @media(max-width: 420px){
+        font-size: 15px;
     }
 `
 
@@ -46,10 +64,10 @@ const Professor = ({offset, factor=1}) => {
             </ParallaxLayer>
             <ParallaxLayer speed={0} offset={offset} factor={factor}> 
                 <Div>
-                    <h1>Message</h1>
-                    <p>3年生4Qで，ディジタル信号処理の授業を担当している滝口です．
+                    <H1>Message</H1>
+                    <Message>3年生4Qで，ディジタル信号処理の授業を担当している滝口です．<br/><br/>
 我々の研究室では，音声，対話，コンピュータビジョン，脳に関する研究をしています．この分野は，大学のみならず世界のIT企業Google，IBM，Apple，Microsoft，Amazon，Facebookなどが力を入れて研究開発を進めています．
-私たちは，特に医学，保健学，生物学など様々な異分野の融合による新しい研究を目指しています．</p>
+私たちは，特に医学，保健学，生物学など様々な異分野の融合による新しい研究を目指しています．</Message>
                 </Div>
             </ParallaxLayer>
         </div>
