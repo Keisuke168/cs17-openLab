@@ -15,8 +15,7 @@ const Img = styled.img`
         width: 85%;
         height: auto;
         top: 25%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
+        right: 1%;
     }
 `
 
@@ -27,9 +26,16 @@ const Div = styled.div`
     height: 40%;
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 5%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    z-index: -999;
+    @media (max-width: 420px){
+        width: 85%;
+        height: auto;
+        left: 1%;
+        top: 75%;
+    }
 `
 
 const Professor = ({offset, factor=1}) => {
@@ -38,7 +44,7 @@ const Professor = ({offset, factor=1}) => {
             <ParallaxLayer speed={0.1} offset={offset} factor={factor}>      
                 <Img alt="sense" src={Image} />     
             </ParallaxLayer>
-            <ParallaxLayer speed={-0.1} offset={offset} factor={factor}> 
+            <ParallaxLayer speed={0} offset={offset} factor={factor}> 
                 <Div>
                     <h1>Message</h1>
                     <p>3年生4Qで，ディジタル信号処理の授業を担当している滝口です．
