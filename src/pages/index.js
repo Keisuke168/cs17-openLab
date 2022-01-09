@@ -10,7 +10,7 @@ import Header from "../components/header"
 const IndexPage = () => {
   return (
     <Layout>
-      {/* <Header/> */}
+      <Header/>
       <Parallax pages={10}>
         <Hero offset={0}/>
         <Professor offset={1} />

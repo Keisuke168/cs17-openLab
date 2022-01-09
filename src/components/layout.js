@@ -14,7 +14,7 @@ const Layout = ({ children, className = `` }) => (
             boxSizing: `inherit`,
           },
           margin: `0px`,
-          fontFamily: `sans-serif`,
+          fontFamily: `Times-New-Roman`,
         },
         html: {
           fontSize: `18px`,

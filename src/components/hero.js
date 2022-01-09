@@ -1,21 +1,23 @@
 import styled from "@emotion/styled"
 import * as React from 'react'
 import { ParallaxLayer } from "@react-spring/parallax"
-import Sample from '../assets/people.mp4'
+import Sample from '../assets/1000A500.mp4'
 
 const Video = styled.video`
     position: absolute;
     right: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%;
+    top: 50%;
+    width: auto; 
+    height: 100vh;
     z-index: -999;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     @media (max-width: 420px){
-        height: 80%;
-        width: auto;
+        height: auto;
+        width: 100%;
         top: 50%;
         -webkit-transform: translateY(-50%);
-        transform: translateY(-50%, -50%);
+        transform: translateY(-50%);
     }
 `
 
