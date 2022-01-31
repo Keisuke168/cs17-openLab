@@ -8,6 +8,7 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-theme-ui",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -21,6 +22,13 @@ module.exports = {
       options: {
         name: 'event',
         path: `${__dirname}/src/images/event/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'reserches',
+        path: `${__dirname}/reserches/`,
       },
     },
   ],
